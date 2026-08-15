@@ -122,10 +122,39 @@ button:disabled{opacity:.42;cursor:not-allowed}
 .warning{display:none;margin-top:13px;padding:9px 10px;border:1px solid #ffd3ad;border-radius:7px;background:#fff4e8;color:#7a3600;font-size:12px}
 footer{max-width:1500px;margin:0 auto 28px;padding:0 24px;color:var(--muted);font-size:12px}
 @media(max-width:1000px){.choice-grid{grid-template-columns:1fr}.workspace{grid-template-columns:1fr}}
+
+.notice-banner{
+  max-width:1500px;
+  margin:20px auto 0;
+  padding:16px 20px;
+  border:2px solid #c62828;
+  border-radius:10px;
+  background:#fff0f0;
+  color:#2b1a1a;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.notice-banner strong{
+  display:block;
+  margin-bottom:4px;
+  font-size:18px;
+  color:#b71c1c;
+}
+.notice-banner p{
+  margin:0;
+  font-size:14px;
+  line-height:1.5;
+}
+
 </style>
 </head>
 <body>
-<header><h1>Business Card Ordering</h1><p>Select a card family, enter the employee information, review the proof, and prepare the printer order.</p></header>
+<header><h1>Business Card Ordering</h1><p>Select a card family, enter the employee information, and review the proof.</p></header>
+
+<div class="notice-banner" role="alert" aria-live="polite">
+  <strong>ORDERING NOT YET AVAILABLE</strong>
+  <p>This tool is available for preview only. Business card orders are not yet being placed or fulfilled. A notification will be sent when ordering is officially available.</p>
+</div>
+
 <main>
 <section id="chooser" class="panel">
   <h2>Select a business card</h2>
